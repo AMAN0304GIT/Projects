@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Josefin Sans";
+}
+
+body{
+    display: flex;
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-image: url('bg3.webp');
+    background-size:cover;
+}
+
+section{
+    background-color:white;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+    margin:auto;
+    padding:40px 100px;
+    opacity: 0.83;
+    box-shadow: 1px 1px 50px black;
+}
+
+.heading{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 0px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icons button{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    text-align: center;
+    padding: 10px 25px;
+    background-color: white;
+    border-color: #33ccff;
+    cursor: pointer;
+}
+.icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.sg1{
+    border: 1px solid black;
+    padding: 10px 0px 10px 0px;
+}
+.sg2{
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px 0px 10px 0px;
+}
+
+.icons button img{
+    width: 20px;
+}
+
+.fields input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    box-shadow: 0.5px 0.5px 5px #33ccff;
+}
+.fields label{
+    display: flex;
+    margin-top: 20px;
+}
+
+.check{
+    display: flex;
+    width:303px;
+    margin: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.check a{
+    text-decoration: none;
+}
+.btn{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.btn button{
+    padding: 13px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    background-color: #33ccff;
+    background-color: #33ccff;
+    border: none;
+    font-weight: bold;
+}
+
+.footer{
+    margin-top: -30px;
+}
+.footer a{
+    text-decoration: none;
+}
+
+.icons a{
+    text-decoration: none;
+    color: black;
+    
+}

@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden ;
+    /* overflow-y: auto; */
+    perspective: 10px;
+    scroll-behavior: smooth;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* used for overlapping layers */
+    z-index: -1;
+}
+
+
+.background{ 
+    transform:translateZ(-40px) ;
+    scale: 5.1;
+}
+
+
+
+.foreground{
+    transform:translateZ(-20px) ;
+    scale: 3;
+}
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h1{
+    position: absolute;
+    top: 5rem;
+    font-size: 7rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+section{
+    background-color: rgb(45, 45 ,45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.secHeading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0 ;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0rem 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateX(-50%);
+    color: black;
+    font-size: 1.5rem;
+    font-weight:600;
+    opacity: 0.75;
+    
+}
+
+.bg1{
+    background-image: url(dubai.jpg);
+}
+
+.bg2{
+    background-image: url(cappadocia.jpg);
+}
+
+.bg3{
+    background-image: url(maldives.jpg);
+}
+.bg4{
+    background-image: url(Singapore7.jpg);
+}
+.bg5{
+    background-image: url(tourism.jpg);
+}
+
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 40%;
+    height: 100%;
+    padding: 50px;
+    color:gray;
+    opacity: 0.75;
+}
+
+.Contact h3{
+    margin-bottom: 40px;
+    font-size: 34px;
+}
+
+.Contact input{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 50%;
+    margin: 15px 130px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.Contact textarea{
+    width: 50%;
+    margin: 20px 130px;
+}
+
+.Contact textarea{
+    border: none; 
+    padding-left: 10px;
+    border-bottom: 1px solid gray ;
+}
+
+.Contact button{
+    padding: 10px 40px;
+    background-color: gray;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contact-section{
+    background-image: url(contactbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    font-weight: 600;
+}
+.navbar a:hover{
+   color: white;
+   transition: all 0.5s;
+   animation: ease;
+}
+
+#lgn-btn a:hover{
+    color: black;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 20px;
+}
